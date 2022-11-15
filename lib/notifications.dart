@@ -23,7 +23,9 @@ class _NotificationsPageState extends State<NotificationsPage> {
                 Row(
                   children: [
                     InkWell(
-                      onTap: () {},
+                      onTap: () {
+                        Navigator.pop(context);
+                      },
                       child: Icon(
                         Icons.arrow_back,
                         size: 24.sp,

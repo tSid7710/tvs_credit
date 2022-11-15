@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/src/widgets/container.dart';
 import 'package:flutter/src/widgets/framework.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:tvs_credit/home.dart';
 
 class SignInPage extends StatefulWidget {
   const SignInPage({super.key});
@@ -140,9 +141,12 @@ class _SignInPageState extends State<SignInPage> {
                     ),
                   ),
                   onTap: () {
-                    setState(() {
-                      print("object");
-                    });
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => HomeScreen(),
+                      ),
+                    );
                   },
                 ),
                 SizedBox(height: 30.h),

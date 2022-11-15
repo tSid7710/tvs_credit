@@ -24,7 +24,7 @@ class MyApp extends StatelessWidget {
           home: child,
         );
       },
-      child:const NotificationsPage() ,
+      child:const SplashScreen() ,
     );
   }
 }

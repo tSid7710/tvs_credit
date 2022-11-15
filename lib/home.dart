@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:tvs_credit/notifications.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});
@@ -28,10 +29,20 @@ class _HomeScreenState extends State<HomeScreen> {
                       color: Colors.black,
                     ),
                   ),
-                  Icon(
-                    Icons.replay,
-                    size: 24.sp,
-                    color: Color(0xff6D5FFD),
+                  InkWell(
+                    onTap: (){
+                      Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => NotificationsPage(),
+                      ),
+                    );
+                    },
+                    child: Icon(
+                      Icons.replay,
+                      size: 24.sp,
+                      color: Color(0xff6D5FFD),
+                    ),
                   ),
                 ],
               ),
